@@ -15,19 +15,19 @@ public class Movie {
 
     }
 
-    public String getTitleOfMovie() {
+    public String getTitle() {
         return title;
     }
 
-    public String getFullNameDirector() {
+    public String getDirectorName() {
         return directorName;
     }
 
-    public int getMovieTime() {
+    public int getDuration() {
         return duration;
     }
 
-    public int getYearOfProductionMovie() {
+    public int getYearOfRelease() {
         return yearOfRelease;
     }
 
