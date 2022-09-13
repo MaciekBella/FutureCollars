@@ -13,8 +13,8 @@ public class RectangularTriangleTest {
         int sideB = 8;
         int sideC = 10;
         // when
-        boolean resultTriangle = RectangularTriangle.getCheckRectangularTriangle(sideA, sideB, sideC);
+        boolean result = RectangularTriangle.isRectangularTriangle(sideA, sideB, sideC);
         // then
-        Assertions.assertEquals(true, resultTriangle);
+        Assertions.assertEquals(true, result);
     }
 }
