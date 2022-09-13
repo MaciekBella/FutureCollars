@@ -6,6 +6,5 @@ public class Main {
         PlaceInCinemaHall placeInCinemaHall = new PlaceInCinemaHall(15, 2, true);
         System.out.println(placeInCinemaHall.getNumberPlace() + "\n" + placeInCinemaHall.getRowNumber() +
                 "\n" + placeInCinemaHall.isFreePlace());
-
     }
 }

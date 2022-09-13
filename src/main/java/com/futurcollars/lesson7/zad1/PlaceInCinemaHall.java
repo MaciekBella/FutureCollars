@@ -12,11 +12,11 @@ public class PlaceInCinemaHall {
         this.isFreePlace = isFreePlace;
     }
 
-    public final int getNumberPlace() {
+    public int getNumberPlace() {
         return numberPlace;
     }
 
-    public final int getRowNumber() {
+    public int getRowNumber() {
         return rowNumber;
     }
 
@@ -24,8 +24,3 @@ public class PlaceInCinemaHall {
         return isFreePlace;
     }
 }
-
-
-
-
-
