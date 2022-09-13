@@ -1,8 +1,19 @@
 package com.futurcollars.lesson7.zad3;
 
 public class TicketSeller extends BaseEmployee {
-    public TicketSeller(String name, String surname, int yearOfEmployment, int baseSalary) {
-        super(name, surname, yearOfEmployment, baseSalary);
+    private final int baseSalary;
+
+    public TicketSeller(String name, String surname, int yearOfEmployment) {
+        super(name, surname, yearOfEmployment);
+        this.baseSalary = 3000;
     }
 
+    @Override
+    public int calculateMonthlySalary() {
+        return 0;
+    }
+
+    public int getBaseSalary() {
+        return baseSalary;
+    }
 }
