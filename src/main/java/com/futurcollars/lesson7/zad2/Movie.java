@@ -2,33 +2,33 @@ package com.futurcollars.lesson7.zad2;
 
 public class Movie {
 
-    private String titleOfMovie;
-    private String fullNameDirector;
-    private int movieTime;
-    private int yearOfProductionMovie;
+    private String title;
+    private final String directorName;
+    private final int duration;
+    private final int yearOfRelease;
 
-    public Movie(String titleOfMovie, String fullNameDirector, int movieTime, int yearOfProductionMovie) {
-        this.titleOfMovie = titleOfMovie;
-        this.fullNameDirector = fullNameDirector;
-        this.movieTime = movieTime;
-        this.yearOfProductionMovie = yearOfProductionMovie;
+    public Movie(String title, String directorName, int duration, int yearOfRelease) {
+        this.title = title;
+        this.directorName = directorName;
+        this.duration = duration;
+        this.yearOfRelease = yearOfRelease;
 
     }
 
     public String getTitleOfMovie() {
-        return titleOfMovie;
+        return title;
     }
 
     public String getFullNameDirector() {
-        return fullNameDirector;
+        return directorName;
     }
 
     public int getMovieTime() {
-        return movieTime;
+        return duration;
     }
 
     public int getYearOfProductionMovie() {
-        return yearOfProductionMovie;
+        return yearOfRelease;
     }
 
 }
