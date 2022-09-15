@@ -7,7 +7,7 @@ public class BillCalculator {
     }
 
     public double calculate(double billValue, float serviceFee, double discount) {
-        return billValue - (1 - discount / 100) + serviceFee;
+        return billValue * (1 - discount / 100) + serviceFee;
     }
 
     public double calculate(double billValue, float serviceFee, short takeOutFee) {

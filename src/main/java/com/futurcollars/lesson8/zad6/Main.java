@@ -8,5 +8,4 @@ public class Main {
         System.out.println(billCalculator.calculate(90, 12));
         System.out.println(billCalculator.calculate(210, 2, 13));
     }
-
 }
