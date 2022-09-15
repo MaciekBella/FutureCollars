@@ -12,15 +12,15 @@ public class Triangle extends Shape {
         this.sideB = sideB;
         this.sideC = sideC;
         this.height = height;
-
     }
+
     @Override
-    public int getPerimeter() {
+    public double getPerimeter() {
         return sideA + sideB + sideC;
     }
 
     @Override
-    public int getArea() {
+    public double getArea() {
         return sideA * height / 2;
     }
 }

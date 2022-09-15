@@ -13,5 +13,4 @@ public class Main {
         System.out.println("Pole prostokąta: " + rectangle.getArea() + "\n" + "Obwód prostokąta: " + rectangle.getPerimeter());
 
     }
-
 }

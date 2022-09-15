@@ -9,12 +9,12 @@ public class Circle extends Shape {
     }
 
     @Override
-    public int getPerimeter() {
-        return (int) (2 * Math.PI * radius);
+    public double getPerimeter() {
+        return (2 * Math.PI * radius);
     }
 
     @Override
-    public int getArea() {
-        return (int) (Math.PI * Math.pow(radius, 2));
+    public double getArea() {
+        return (Math.PI * Math.pow(radius, 2));
     }
 }

@@ -4,19 +4,18 @@ public class Square extends Shape {
 
     private int sideA;
 
-
     public Square(int sideA) {
         this.sideA = sideA;
     }
 
     @Override
-    public int getPerimeter() {
+    public double getPerimeter() {
         return 4 * sideA;
     }
 
     @Override
-    public int getArea() {
-        return (int) Math.pow(sideA, 2);
+    public double getArea() {
+        return Math.pow(sideA, 2);
     }
 
 }

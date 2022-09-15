@@ -14,9 +14,9 @@ public class ShapeTest {
         // given
         int number = 9;
         // when
-        int resultPerimeterSquare = new Square(number).getPerimeter();
+        double resultPerimeterSquare = new Square(number).getPerimeter();
         // then
-        Assertions.assertEquals(32, resultPerimeterSquare);
+        Assertions.assertEquals(36, resultPerimeterSquare);
     }
 
     @Test
@@ -24,7 +24,7 @@ public class ShapeTest {
         // given
         int number = 8;
         // when
-        int resultAreaSquare = new Square(number).getArea();
+        double resultAreaSquare = new Square(number).getArea();
         // then
         Assertions.assertEquals(64, resultAreaSquare);
     }
@@ -32,12 +32,12 @@ public class ShapeTest {
     @Test
     void shouldGetPerimeterTriangle() {
         // given
-        int number1 = 6;
-        int number2 = 8;
-        int number3 = 4;
-        int number4 = 8;
+        int sideA = 6;
+        int sideB = 8;
+        int sideC = 4;
+        int height = 8;
         // when
-        int resultPerimeterTriangle = new Triangle(number1, number2, number3, number4).getPerimeter();
+        double resultPerimeterTriangle = new Triangle(sideA, sideB, sideC, height).getPerimeter();
         // then
         Assertions.assertEquals(18, resultPerimeterTriangle);
     }
@@ -45,12 +45,12 @@ public class ShapeTest {
     @Test
     void shouldGetAreaTriangle() {
         // given
-        int number1 = 6;
-        int number2 = 8;
-        int number3 = 4;
-        int number4 = 8;
+        int sideA = 6;
+        int sideB = 8;
+        int sideC = 4;
+        int height = 8;
         // when
-        int resultAreaTriangle = new Triangle(number1, number2, number3, number4).getArea();
+        double resultAreaTriangle = new Triangle(sideA, sideB, sideC, height).getArea();
         // then
         Assertions.assertEquals(24, resultAreaTriangle);
     }
@@ -60,7 +60,7 @@ public class ShapeTest {
         // given
         int number1 = 8;
         // when
-        int resultPerimeterCircle = new Circle(number1).getPerimeter();
+        double resultPerimeterCircle = new Circle(number1).getPerimeter();
         // then
         Assertions.assertEquals(50, resultPerimeterCircle);
     }
@@ -70,7 +70,7 @@ public class ShapeTest {
         // given
         int number1 = 8;
         // when
-        int resultAreaCircle = new Circle(number1).getArea();
+        double resultAreaCircle = new Circle(number1).getArea();
         // given
         Assertions.assertEquals(201, resultAreaCircle);
     }
@@ -81,7 +81,7 @@ public class ShapeTest {
         int number1 = 8;
         int number2 = 12;
         // when
-        int resultPerimeterRectangle = new Rectangle(number1, number2).getPerimeter();
+        double resultPerimeterRectangle = new Rectangle(number1, number2).getPerimeter();
         // then
         Assertions.assertEquals(40, resultPerimeterRectangle);
     }
@@ -92,7 +92,7 @@ public class ShapeTest {
         int number1 = 8;
         int number2 = 12;
         // when
-        int resultAreaRectangle = new Rectangle(number1, number2).getArea();
+        double resultAreaRectangle = new Rectangle(number1, number2).getArea();
         // then
         Assertions.assertEquals(96, resultAreaRectangle);
     }
