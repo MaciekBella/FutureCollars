@@ -29,7 +29,8 @@ public class Person {
     }
 
     public boolean hashCode(Person name) {
-        return false || true;
+
+        return true;
     }
 
 }
