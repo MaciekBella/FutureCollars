@@ -12,7 +12,7 @@ public class AreaAndPerimeterTest {
         // given
         int number = 6;
         // when
-        int resultArea = new Square(number).getArea();
+        double resultArea = new Square(number).getArea();
         // then
         Assertions.assertEquals(36, resultArea);
     }
@@ -22,7 +22,7 @@ public class AreaAndPerimeterTest {
         // given
         int number = 6;
         // when
-        int resultPerimeter = new Square(number).getPerimeter();
+        double resultPerimeter = new Square(number).getPerimeter();
         // then
         Assertions.assertEquals(24, resultPerimeter);
     }
@@ -32,7 +32,7 @@ public class AreaAndPerimeterTest {
         // given
         int number = 3;
         // when
-        int resultArea = new Circle(number).getArea();
+        double resultArea = new Circle(number).getArea();
         // then
         Assertions.assertEquals(28, resultArea);
     }
@@ -42,7 +42,7 @@ public class AreaAndPerimeterTest {
         // given
         int number = 3;
         // when
-        int resultPerimeter = new Circle(number).getPerimeter();
+        double resultPerimeter = new Circle(number).getPerimeter();
         // then
         Assertions.assertEquals(18, resultPerimeter);
     }
