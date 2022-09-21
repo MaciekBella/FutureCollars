@@ -27,10 +27,4 @@ public class Person {
     public int hashCode() {
         return Objects.hash(name, age, height, work);
     }
-
-    public boolean hashCode(Person name) {
-
-        return true;
-    }
-
 }
