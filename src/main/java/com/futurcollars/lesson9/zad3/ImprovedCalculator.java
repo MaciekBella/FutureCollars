@@ -1,32 +1,53 @@
 package com.futurcollars.lesson9.zad3;
 
-public class ImprovedCalculator {
-
+public class ImprovedCalculator implements Calculator {
     private int number1;
     private int number2;
 
-    ImprovedCalculator(int number1, int number2) {
+    public ImprovedCalculator(int number1, int number2) {
         this.number1 = number1;
         this.number2 = number2;
     }
 
+    @Override
     public int sum() {
-        System.out.println(number1 + number2);
         return number1 + number2;
     }
 
+    @Override
     public int subtract() {
-        System.out.println(number1 - number2);
         return number1 - number2;
     }
 
+    @Override
     public int multiply() {
-        System.out.println(number1 * number2);
         return number1 * number2;
     }
 
+    @Override
     public int divide() {
-        System.out.println(number1 / number2);
         return number1 / number2;
+    }
+
+    public int getCalculator(MathAction asd) {
+        int result;
+        switch (asd) {
+            case SUM:
+                result = sum();
+                break;
+            case SUBTRACT:
+                result = subtract();
+                break;
+            case MULTIPLY:
+                result = multiply();
+                break;
+            case DIVIDE:
+                result = divide();
+                break;
+            default:
+                result = 0;
+                break;
+        }
+        return result;
     }
 }
