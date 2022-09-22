@@ -8,6 +8,7 @@ public class EmployeeCorrect {
     private int age;
     private BigDecimal baseSalary;
     private BigDecimal bonus;
+    public static final String WHITE_SPACE = " ";
 
     public EmployeeCorrect(String name, String surname) {
         this.name = name;
@@ -18,7 +19,6 @@ public class EmployeeCorrect {
         this.name = name;
         this.surname = surname;
         this.age = age;
-
     }
 
     public EmployeeCorrect(String name, String surname, int age, BigDecimal baseSalary) {
@@ -44,11 +44,7 @@ public class EmployeeCorrect {
     public String getEmployeeDetails() {
         return "Employee details : " + name + WHITE_SPACE + surname + " is " + age;
     }
-
-    public static final String WHITE_SPACE = " ";
-
-    // Method is used to get total  salary
-    public BigDecimal getBaseSalaryAddBonus() {
+    public BigDecimal getFullSalary() {
         return baseSalary.add(bonus);
     }
 
