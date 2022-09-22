@@ -5,7 +5,6 @@ public class TextInFormat {
     private String text;
 
     public TextInFormat(String text) {
-
         this.text = text;
     }
 
@@ -14,19 +13,28 @@ public class TextInFormat {
     }
 
     public boolean isPalindrome() {
-        boolean truefalse = true;
+        boolean result = true;
         for (int i = 0; i < text.length() / 2; i++) {
             if (text.charAt(i) != text.charAt(text.length() - 1 - i)) {
-                truefalse = false;
-
+                result = false;
             } else {
-                truefalse = true;
+                result = true;
             }
         }
-        return truefalse;
+        return result;
     }
 
-    public int isLength() {
+    public int getLength() {
         return text.length();
+    }
+
+    public void textVerify() {
+        if (!isEmpty()) {
+            System.out.println(isPalindrome());
+            System.out.println(getLength());
+        } else {
+            System.out.println("Zepsuło sie ");
+        }
+        return;
     }
 }
