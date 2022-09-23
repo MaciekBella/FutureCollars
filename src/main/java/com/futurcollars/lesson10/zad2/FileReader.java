@@ -6,15 +6,14 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
-public class WriteToTheSecondLine {
+public class FileReader {
 
-    public void getWriteTheSecondLine() {
+    public void getTheSecondLine() {
         try {
             Path path = Paths.get("src/main/resources/com/futurecollars/lesson10/zad0/data.txt");
             List<String> content = Files.readAllLines(path);
             for (int i = 0; i < content.size(); i = i + 2) {
-                String content1 = content.get(i);
-                System.out.println(content1);
+                System.out.println(content.get(i));
             }
         } catch (IOException exception) {
             exception.printStackTrace();
