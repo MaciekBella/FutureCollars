@@ -5,15 +5,13 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class PrintTheNumberOfChar {
+public class NumberOfChar {
 
-    public void getWriteTheNumberOdChar() {
-        int numberChar;
+    public void printFileLength() {
         try {
             Path path = Paths.get("src/main/resources/com/futurecollars/lesson10/zad0/data.txt");
             String content = Files.readString(path);
-            numberChar = content.length();
-            System.out.println(numberChar);
+            System.out.println(content.length());
         } catch (IOException exception) {
             exception.printStackTrace();
         }
