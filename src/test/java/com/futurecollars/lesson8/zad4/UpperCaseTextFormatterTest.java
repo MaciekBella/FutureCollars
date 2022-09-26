@@ -9,7 +9,7 @@ public class UpperCaseTextFormatterTest {
     @Test
     void shouldGetUpperCaseText() {
         // given
-        String text = "UCZENIE JAVA SPRAWIA MI PRZYJEMNOŚĆ";
+        String text = "uczenie java sprawia mi przyjemność";
         // when
         String result = new UpperCaseTextFormatter().formatText(text);
         // then

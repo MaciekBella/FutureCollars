@@ -8,7 +8,7 @@ public class LowerCaseTextFormatterTest {
     @Test
     void shouldGetLowerCaseText() {
         // given
-        String text = "uczenie java sprawia mi przyjemność";
+        String text = "UCZENIE JAVA SPRAWIA MI PRZYJEMNOŚĆ";
         // when
         String result = new LowerCaseTextFormatter().formatText(text);
         // then
