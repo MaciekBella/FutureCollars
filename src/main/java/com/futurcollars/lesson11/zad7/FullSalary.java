@@ -1,21 +1,16 @@
 package com.futurcollars.lesson11.zad7;
 
-public class FullSalary implements BasicSalary, SaturdaySalary {
-    public FullSalary() {
+public class FullSalary {
 
+    private BasicSalary basicSalary;
+    private SaturdaySalary saturdaySalary;
+
+    public FullSalary(BasicSalary basicSalary, SaturdaySalary saturdaySalary) {
+        this.basicSalary = basicSalary;
+        this.saturdaySalary = saturdaySalary;
     }
 
-    @Override
-    public int getBasicSalary(int basicSalary) {
-        return basicSalary;
-    }
-
-    @Override
-    public int getAmountSaturday(int amount) {
-        return amount;
-    }
-
-    public int getFullPay(int basicSalary, int bonusSalary, int amountSaturday, int numberSaturday) {
-        return (getBasicSalary(basicSalary) + bonusSalary) + (getAmountSaturday(amountSaturday) * numberSaturday);
+    public int getFullPay(int bonusSalary, int numberSaturday) {
+        return basicSalary.getBasicSalary() + bonusSalary + saturdaySalary.getAmountSaturday() * numberSaturday;
     }
 }
