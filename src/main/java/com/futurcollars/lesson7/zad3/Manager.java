@@ -4,9 +4,12 @@ public class Manager extends BaseEmployee {
     private final int baseSalary;
     private int bonus;
 
-    public Manager(String name, String surname, int yearOfEmployment, int bonus) {
+    public Manager(String name, String surname, int yearOfEmployment) {
         super(name, surname, yearOfEmployment);
         this.baseSalary = 5000;
+    }
+
+    public void setBonus(int bonus) {
         this.bonus = bonus;
     }
 

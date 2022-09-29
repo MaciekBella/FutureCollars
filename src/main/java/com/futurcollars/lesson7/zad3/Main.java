@@ -11,12 +11,12 @@ public class Main {
         System.out.println(ticketSeller.getBaseSalary());
         System.out.println("* * * * * * ");
         System.out.println("Manager");
-        Manager manager = new Manager("Marcin", "Kowalczyk", 2005, 500);
+        Manager manager = new Manager("Marcin", "Kowalczyk", 2005);
         System.out.println(manager.getName());
         System.out.println(manager.getSurname());
         System.out.println(manager.getExperience() + " years");
+        manager.setBonus(500);
         System.out.println(manager.getBaseSalary());
         System.out.println(manager.calculateMonthlySalary());
-
     }
 }
