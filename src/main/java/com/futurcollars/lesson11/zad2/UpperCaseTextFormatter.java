@@ -1,13 +1,11 @@
 package com.futurcollars.lesson11.zad2;
 
 public class UpperCaseTextFormatter {
-    private String text;
 
-    public UpperCaseTextFormatter(String text) {
-        this.text = text;
-    }
-
-    public String getConvertToUpperCase() {
+    public String convertToUpperCase(String text) {
+        if (text == null) {
+            return "";
+        }
         return text.toUpperCase();
     }
 }
