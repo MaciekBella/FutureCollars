@@ -9,10 +9,10 @@ public class DayOfTheWeekTest {
     @Test
     void shouldGetDayOfTheWeek() {
         //given
-        int numberDay = 4;
+        int numberDay = 2;
         // when
         String result = DayOfTheWeek.getNameOfTheWeekDay(numberDay);
         // then
-        Assertions.assertEquals("Monday", result);
+        Assertions.assertEquals("Tuesday", result);
     }
 }
