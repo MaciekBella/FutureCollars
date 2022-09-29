@@ -1,6 +1,6 @@
 package com.futurecollars.lesson11.zad3;
 
-import com.futurcollars.lesson11.zad3.LengthOfTheText;
+import com.futurcollars.lesson11.zad3.TextLengthService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,15 +8,15 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-public class LengthOfTheTextTest {
+public class TextLengthServiceTest {
 
     @ParameterizedTest
     @MethodSource("provideStringForLength")
-    void shouldVerifyTextForLength(String input, int expected) {
+    void shouldReturnTextLength(String input, int expected) {
         // given
-        LengthOfTheText lengthOfTheText = new LengthOfTheText(input);
+        TextLengthService lengthOfTheText = new TextLengthService();
         // when
-        int result = lengthOfTheText.CheckTheLengthOfTheText();
+        int result = lengthOfTheText.CheckTheLengthOfTheText(input);
         // then
         Assertions.assertEquals(expected, result);
     }
