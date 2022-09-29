@@ -14,9 +14,9 @@ public class TextLengthServiceTest {
     @MethodSource("provideStringForLength")
     void shouldReturnTextLength(String input, int expected) {
         // given
-        TextLengthService lengthOfTheText = new TextLengthService();
+        TextLengthService textLengthService = new TextLengthService();
         // when
-        int result = lengthOfTheText.CheckTheLengthOfTheText(input);
+        int result = textLengthService.CheckTheLengthOfTheText(input);
         // then
         Assertions.assertEquals(expected, result);
     }
