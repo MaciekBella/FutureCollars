@@ -2,7 +2,7 @@ package com.futurcollars.lesson11.zad3;
 
 public class TextLengthService {
 
-    public int CheckTheLengthOfTheText(String text) {
+    public int checkTheLengthOfTheText(String text) {
         return text.length();
     }
 }

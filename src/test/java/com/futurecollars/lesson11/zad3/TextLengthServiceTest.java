@@ -16,7 +16,7 @@ public class TextLengthServiceTest {
         // given
         TextLengthService textLengthService = new TextLengthService();
         // when
-        int result = textLengthService.CheckTheLengthOfTheText(input);
+        int result = textLengthService.checkTheLengthOfTheText(input);
         // then
         Assertions.assertEquals(expected, result);
     }
