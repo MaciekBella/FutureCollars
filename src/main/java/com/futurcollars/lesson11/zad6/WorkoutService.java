@@ -1,6 +1,6 @@
 package com.futurcollars.lesson11.zad6;
 
-public class Workout {
+public class WorkoutService {
 
     WorkoutLengthCalculator workoutLengthCalculator = new WorkoutLengthCalculator();
     HeartRateCalculator heartRateCalculator = new HeartRateCalculator();

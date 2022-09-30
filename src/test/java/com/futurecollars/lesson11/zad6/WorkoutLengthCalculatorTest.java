@@ -1,6 +1,5 @@
 package com.futurecollars.lesson11.zad6;
 
-import com.futurcollars.lesson11.zad6.Workout;
 import com.futurcollars.lesson11.zad6.WorkoutLengthCalculator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;

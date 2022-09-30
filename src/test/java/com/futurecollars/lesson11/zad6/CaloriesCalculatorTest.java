@@ -1,7 +1,6 @@
 package com.futurecollars.lesson11.zad6;
 
 import com.futurcollars.lesson11.zad6.CaloriesCalculator;
-import com.futurcollars.lesson11.zad6.Workout;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

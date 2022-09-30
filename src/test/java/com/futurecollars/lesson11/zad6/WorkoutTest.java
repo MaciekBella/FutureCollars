@@ -1,6 +1,6 @@
 package com.futurecollars.lesson11.zad6;
 
-import com.futurcollars.lesson11.zad6.Workout;
+import com.futurcollars.lesson11.zad6.WorkoutService;
 import com.futurcollars.lesson11.zad6.WorkoutComment;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -14,9 +14,9 @@ public class WorkoutTest {
         int calorieBurned = 350;
         int pulse = 178;
         // given
-        Workout workout = new Workout();
+        WorkoutService workoutService = new WorkoutService();
         // when
-        WorkoutComment result = workout.getResultWorkout(workoutLength, calorieBurned, pulse);
+        WorkoutComment result = workoutService.getResultWorkout(workoutLength, calorieBurned, pulse);
         Assertions.assertEquals(workoutComment, result);
     }
 }
