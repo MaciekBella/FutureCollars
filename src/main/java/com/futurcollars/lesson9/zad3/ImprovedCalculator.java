@@ -1,52 +1,45 @@
 package com.futurcollars.lesson9.zad3;
 
 public class ImprovedCalculator implements Calculator {
-    private int number1;
-    private int number2;
 
-    public ImprovedCalculator(int number1, int number2) {
-        this.number1 = number1;
-        this.number2 = number2;
-    }
 
     @Override
-    public int sum() {
+    public int sum(int number1, int number2) {
         return number1 + number2;
     }
 
     @Override
-    public int subtract() {
+    public int subtract(int number1, int number2) {
         return number1 - number2;
     }
 
     @Override
-    public int multiply() {
+    public int multiply(int number1, int number2) {
         return number1 * number2;
     }
 
     @Override
-    public int divide() {
+    public int divide(int number1, int number2) {
         return number1 / number2;
     }
 
-    public int getCalculator(MathAction asd) {
+    public int doCalculation(MathAction action, int number1, int number2) {
         int result;
-        switch (asd) {
+        switch (action) {
             case SUM:
-                result = sum();
+                result = sum(number1, number2);
                 break;
             case SUBTRACT:
-                result = subtract();
+                result = subtract(number1, number2);
                 break;
             case MULTIPLY:
-                result = multiply();
+                result = multiply(number1, number2);
                 break;
             case DIVIDE:
-                result = divide();
+                result = divide(number1, number2);
                 break;
             default:
-                result = 0;
-                break;
+                throw new IllegalArgumentException("Nie ma takiej operacji");
         }
         return result;
     }
