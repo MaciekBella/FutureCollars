@@ -2,9 +2,15 @@ package com.futurcollars.lesson11.zad6;
 
 public class WorkoutService {
 
-    WorkoutLengthCalculator workoutLengthCalculator = new WorkoutLengthCalculator();
-    HeartRateCalculator heartRateCalculator = new HeartRateCalculator();
-    CaloriesCalculator caloriesCalculator = new CaloriesCalculator();
+    private final WorkoutLengthCalculator workoutLengthCalculator;
+    private final HeartRateCalculator heartRateCalculator;
+    private final CaloriesCalculator caloriesCalculator;
+
+    public WorkoutService(WorkoutLengthCalculator workoutLengthCalculator, HeartRateCalculator heartRateCalculator, CaloriesCalculator caloriesCalculator) {
+        this.workoutLengthCalculator = workoutLengthCalculator;
+        this.heartRateCalculator = heartRateCalculator;
+        this.caloriesCalculator = caloriesCalculator;
+    }
 
     public WorkoutComment getResultWorkout(int workoutLength, int calorieBurned, int pulse) {
         double result = (workoutLengthCalculator.getWorkoutLength(workoutLength)

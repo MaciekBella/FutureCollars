@@ -1,7 +1,6 @@
 package com.futurecollars.lesson11.zad6;
 
-import com.futurcollars.lesson11.zad6.WorkoutService;
-import com.futurcollars.lesson11.zad6.WorkoutComment;
+import com.futurcollars.lesson11.zad6.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -14,7 +13,10 @@ public class WorkoutServiceTest {
     @MethodSource("provideResultWorkout")
     void shouldVerifyResultWorkout(int input1, int input2, int input3, WorkoutComment expected) {
         // given
-        WorkoutService workoutService = new WorkoutService();
+        CaloriesCalculator caloriesCalculator = new CaloriesCalculator();
+        WorkoutLengthCalculator workoutLengthCalculator = new WorkoutLengthCalculator();
+        HeartRateCalculator heartRateCalculator = new HeartRateCalculator();
+        WorkoutService workoutService = new WorkoutService(workoutLengthCalculator, heartRateCalculator, caloriesCalculator);
         // when
         WorkoutComment result = workoutService.getResultWorkout(input1, input2, input3);
         // then
