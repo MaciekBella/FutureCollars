@@ -17,7 +17,7 @@ public class WorkoutService {
         } else if (result >= 2 && result < 3) {
             workoutComment = WorkoutComment.BARDZO_DOBRA;
         } else if (result == 3) {
-            workoutComment = WorkoutComment.BARDZO_DOBRA;
+            workoutComment = WorkoutComment.DOSKONAŁA;
         } else {
             workoutComment = WorkoutComment.BŁĄD;
         }
