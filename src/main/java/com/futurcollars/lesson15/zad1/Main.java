@@ -7,6 +7,6 @@ public class Main {
 
         IntStream intStream = IntStream.of(5, 6, 9, 16, 15, 18, 13, 19, 30, 36);
         DivisibleByNumber divisibleByNumber = new DivisibleByNumber();
-        divisibleByNumber.getNumberDivisibleByThree(intStream);
+        divisibleByNumber.GetARangeOfNumbersDivisibleByThree(intStream);
     }
 }
