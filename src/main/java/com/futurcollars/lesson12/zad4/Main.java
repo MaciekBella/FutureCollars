@@ -11,14 +11,14 @@ public class Main {
                 new Person("Marysia", "Kowalska", 1956, 189, 67),
                 new Person("Monika", "Mela", 2005, 155, 45));
 
-        getComparisonOfThePersonWeight(people);
+        printPeopleByWeight(people);
         System.out.println();
-        getComparisonOfThePersonBirthday(people);
+        printPeopleYearOfBirth(people);
         System.out.println();
-        getComparisonOfThePersonHeight(people);
+        printPeopleByHeight(people);
     }
 
-    public static void getComparisonOfThePersonWeight(List<Person> people) {
+    public static void printPeopleByWeight(List<Person> people) {
         Set<Person> peopleByWeight = new TreeSet<>(new Comparator<Person>() {
             @Override
             public int compare(Person o1, Person o2) {
@@ -31,7 +31,7 @@ public class Main {
         }
     }
 
-    public static void getComparisonOfThePersonHeight(List<Person> people) {
+    public static void printPeopleByHeight(List<Person> people) {
         Set<Person> peopleByHeight = new TreeSet<>(new Comparator<Person>() {
             @Override
             public int compare(Person o1, Person o2) {
@@ -44,7 +44,7 @@ public class Main {
         }
     }
 
-    public static void getComparisonOfThePersonBirthday(List<Person> people) {
+    public static void printPeopleYearOfBirth(List<Person> people) {
         Set<Person> peopleByYearOfBirth = new TreeSet<>();
         peopleByYearOfBirth.addAll(people);
         for (Person person : peopleByYearOfBirth) {

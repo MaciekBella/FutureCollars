@@ -40,7 +40,7 @@ public class Person implements Comparable<Person> {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "Person{"  +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", yearOfBirth=" + yearOfBirth +
