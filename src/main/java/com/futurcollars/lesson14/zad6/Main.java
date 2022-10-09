@@ -6,7 +6,7 @@ import java.time.Month;
 public class Main {
     public static void main(String[] args) {
 
-        LocalDate dateOfBirth = LocalDate.of(2003, Month.MARCH, 15);
+        LocalDate dateOfBirth = LocalDate.of(2000, Month.MARCH, 15);
         Birthday birthday = new Birthday();
         System.out.println(birthday.getTheAgeOfThePerson(dateOfBirth) + " Years");
         System.out.println();
