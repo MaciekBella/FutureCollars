@@ -13,7 +13,7 @@ public class PeselValidatorTest {
         // given
         PeselValidator peselValidator = new PeselValidator();
         // when
-        boolean result = peselValidator.isValidatePesel(input);
+        boolean result = peselValidator.isValid(input);
         // then
         Assertions.assertEquals(expected, result);
     }

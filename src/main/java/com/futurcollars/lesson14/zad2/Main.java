@@ -4,6 +4,6 @@ public class Main {
     public static void main(String[] args) {
 
         PeselValidator peselValidator = new PeselValidator();
-        System.out.println(peselValidator.isValidatePesel("12345678911"));
+        System.out.println(peselValidator.isValid("12345678911"));
     }
 }
