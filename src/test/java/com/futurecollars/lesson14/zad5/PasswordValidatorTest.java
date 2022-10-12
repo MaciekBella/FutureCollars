@@ -14,7 +14,7 @@ public class PasswordValidatorTest {
         // given
         PasswordValidator passwordValidator = new PasswordValidator();
         // when
-        boolean result = passwordValidator.isValidatePassword(input);
+        boolean result = passwordValidator.isValid(input);
         // then
         Assertions.assertEquals(expected, result);
     }

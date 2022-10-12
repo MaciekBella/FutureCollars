@@ -4,6 +4,6 @@ public class Main {
     public static void main(String[] args) {
 
         PasswordValidator passwordValidator = new PasswordValidator();
-        System.out.println(passwordValidator.isValidatePassword("kKamilek2022"));
+        System.out.println(passwordValidator.isValid("kKamilek2022"));
     }
 }
