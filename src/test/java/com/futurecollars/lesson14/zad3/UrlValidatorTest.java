@@ -14,7 +14,7 @@ public class UrlValidatorTest {
         // given
         UrlValidator urlValidator = new UrlValidator();
         // when
-        boolean result = urlValidator.isValidateUrl(input);
+        boolean result = urlValidator.isValid(input);
         // then
         Assertions.assertEquals(expected, result);
     }

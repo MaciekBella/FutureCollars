@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class UrlValidator {
 
-    public boolean isValidateUrl(String url) {
+    public boolean isValid(String url) {
         Pattern pattern = Pattern.compile("^(https?|http)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]");
         Matcher matcher = pattern.matcher(url);
         return matcher.matches();
