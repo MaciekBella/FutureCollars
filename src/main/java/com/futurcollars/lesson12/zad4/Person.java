@@ -40,7 +40,7 @@ public class Person implements Comparable<Person> {
 
     @Override
     public String toString() {
-        return "Person{"  +
+        return "Person{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", yearOfBirth=" + yearOfBirth +
@@ -51,6 +51,6 @@ public class Person implements Comparable<Person> {
 
     @Override
     public int compareTo(Person o) {
-        return Integer.compare(2022 - this.yearOfBirth, 2022 - o.yearOfBirth);
+        return Integer.compare(o.yearOfBirth, this.yearOfBirth);
     }
 }

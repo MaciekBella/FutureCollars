@@ -22,7 +22,7 @@ public class Main {
         Set<Person> peopleByWeight = new TreeSet<>(new Comparator<Person>() {
             @Override
             public int compare(Person o1, Person o2) {
-                return Integer.compare(o1.getWeight(), o2.getWeight());
+                return Integer.compare(o2.getWeight(), o1.getWeight());
             }
         });
         peopleByWeight.addAll(people);
