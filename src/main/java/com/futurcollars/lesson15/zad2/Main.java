@@ -19,9 +19,9 @@ public class Main {
                 new Pizza("nowojorska", true, 465, List.of("papryka", "seler", "mozarella")),
                 new Pizza("Diavola", false, 265, List.of("mozarella", "cabula", "papryka")),
                 new Pizza("Ortolana", true, 135, List.of("pieczarki", "cabula", "pomidor")));
-        Pizza.printIsVegetarian(menu);
+        Pizza.getAllVegetarianPizzas(menu);
         System.out.println();
-        Pizza.printContainsCelery(menu);
+        Pizza.getAllPizzasWithCelery(menu);
         System.out.println();
         System.out.println(Pizza.checkIsVeganAndContainsTomatoAndPepper(menu));
         System.out.println();

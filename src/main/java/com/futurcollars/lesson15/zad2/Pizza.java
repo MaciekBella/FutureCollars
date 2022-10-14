@@ -33,7 +33,7 @@ public class Pizza {
         return ingredients;
     }
 
-    public static void printIsVegetarian(List<Pizza> menu) {
+    public static void getAllVegetarianPizzas(List<Pizza> menu) {
         menu
                 .stream()
                 .filter(x -> x.isVegan)
@@ -41,7 +41,7 @@ public class Pizza {
                 .forEach(System.out::println);
     }
 
-    public static void printContainsCelery(List<Pizza> menu) {
+    public static void getAllPizzasWithCelery(List<Pizza> menu) {
         menu
                 .stream()
                 .filter(x -> x.getIngredients().contains("seler"))
